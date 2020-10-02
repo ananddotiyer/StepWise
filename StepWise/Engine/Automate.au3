@@ -13,7 +13,6 @@
 #include <Date.au3>
 #include <Common.au3>
 #include <Verification.au3>
-#include <Browser.au3>
 #include <UDF.au3>
 #include <WinAPI.au3>
 #include <Misc.au3>
@@ -280,11 +279,6 @@ While 1
 			Case "VerifyWinText"
 				;Verify if the text in the window is as specified; Window name [Select Window];Expected text
 				V_VerifyWinText($BaseArgs)
-
-			;Methods-Browser
-			Case "IE_Navigate"
-				;Opens IE and navigates to specified URL;URL to navigate to
-				IE_Navigate($BaseArgs);
 
 			;Methods-UDF
 
